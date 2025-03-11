@@ -1,0 +1,108 @@
+.small-icon {
+    width: 30px; /* Adjust size as needed */
+  }
+  .bar-progress{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ 
+}
+  .bar-progress-human{
+    padding-right:1%;
+  }
+  .bar-progress-social{
+    padding-left:1%;
+
+  }
+  .container-website{
+    padding: 5%;
+  }
+  @media (max-width: 768px) {
+    .card {
+        margin-bottom: 24px;
+        text-align: center;
+    }
+    .container-website{
+      max-width: 325px !important;
+    }
+    /* Thiết lập lại bố cục cho các card */
+    .progress-group {
+        flex-direction: column;
+    }
+
+    .progress-group-header, .progress-group-bars {
+        margin-bottom: 10px;
+    }
+
+    .large-number {
+        font-size: 1.5rem;
+    }
+
+    .small-icon {
+        width: 24px; /* Giảm kích thước biểu tượng nhỏ cho màn hình nhỏ */
+        height: 24px;
+    }
+}
+
+/* Media Query cho màn hình rất nhỏ (dưới 576px) */
+@media (max-width: 576px) {
+    .progress-group {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-group-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-group-bars {
+        margin-top: 10px;
+    }
+
+    .card {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .large-number {
+        font-size: 1.25rem;
+    }
+
+    .small-icon {
+        width: 20px; /* Giảm kích thước biểu tượng nhỏ hơn cho màn hình rất nhỏ */
+        height: 20px;
+    }
+}
+
+
+/* Đối với màn hình nhỏ */
+@media (max-width: 576px) {
+    .table-responsive th, .table-responsive td {
+        padding: 8px;
+    }
+}
+
+/* Flexbox cho bố cục */
+
+/* Đối với màn hình nhỏ, tất cả các cột sẽ chiếm toàn bộ chiều rộng */
+@media (max-width: 768px) {
+    .col-6, .col-12 {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+/* Trên màn hình nhỏ */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Trên màn hình rất nhỏ */
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}
